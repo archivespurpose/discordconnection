@@ -1,0 +1,33 @@
+name: Notify Discord on Success
+
+on:
+  push:
+    branches:
+      - main  # or the branch you want to trigger the pipeline from
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python (or any language/environment you need)
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run your build or test script
+        run: |
+          echo "Running pipeline..."
+          # Add your build or test commands here
+          
+      - name: Notify Discord
+        if: success()
+        uses: docker://curlimages/curl:latest
+        with:
+          args: |
+            -X POST
+            -H "Content-Type: application/json"
+            -d '{"content": "Pipeline execution successful!"}'
+            ${{ secrets.DISCORD_WEBHOOK_URL }}
