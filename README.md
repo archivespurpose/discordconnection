@@ -1,2 +1,2 @@
 # discordconnection
-Testing Discord Connection
+Testing Discord Connections
