@@ -28,7 +28,7 @@ jobs:
         with:
           script: |
             const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
-            const message = "<@608271459445637120> kritan?";
+            const message = "F";
             
             const response = await fetch(webhookUrl, {
               method: 'POST',
