@@ -28,7 +28,7 @@ jobs:
         with:
           script: |
             const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
-            const message = "Pipeline execution successful!";
+            const message = "Hi";
             
             const response = await fetch(webhookUrl, {
               method: 'POST',
