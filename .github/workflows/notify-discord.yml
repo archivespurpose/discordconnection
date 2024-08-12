@@ -28,7 +28,7 @@ jobs:
         with:
           script: |
             const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
-            const message = "<@608271459445637120> i am not being used by rilduk";
+            const message = "<@608271459445637120> kritan?";
             
             const response = await fetch(webhookUrl, {
               method: 'POST',
