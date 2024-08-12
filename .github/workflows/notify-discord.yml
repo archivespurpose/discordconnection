@@ -28,7 +28,7 @@ jobs:
         with:
           script: |
             const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
-            const message = " yo <@608271459445637120>";
+            const message = "<@608271459445637120> i am not being used by rilduk";
             
             const response = await fetch(webhookUrl, {
               method: 'POST',
