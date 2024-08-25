@@ -28,7 +28,7 @@ jobs:
         with:
           script: |
             const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
-            const message = "<@757956934727893115> Ola?";
+            const message = "<@972304333590896760> Speak up?";
             
             const response = await fetch(webhookUrl, {
               method: 'POST',
