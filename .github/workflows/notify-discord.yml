@@ -28,7 +28,7 @@ jobs:
         with:
           script: |
             const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
-            const message = "<@474231523004907531> Kindly create other VC's as these 4 seems to be broken. Thanks!";
+            const message = "<@1208469307713912932> Kindly create other VC's as these 4 seems to be broken. Thanks!";
             
             const response = await fetch(webhookUrl, {
               method: 'POST',
